@@ -1,6 +1,7 @@
 import pybullet as p
 import time 
 
+p.loadSDF("box.sdf")
 physicsClient = p.connect(p.GUI)
 
 for x in range(1000):

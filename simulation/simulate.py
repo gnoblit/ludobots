@@ -8,7 +8,9 @@ p.setGravity(0, 0, -9.8)
 
 
 planeID = p.loadURDF("plane.urdf")
-p.loadSDF("boxes.sdf")
+bodyID = p.loadURDF("body.urdf")
+
+p.loadSDF("world.sdf")
 
 for x in range(1000):
     time.sleep(1/30)
